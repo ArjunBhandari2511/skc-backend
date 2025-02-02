@@ -9,7 +9,11 @@ dotenv.config();
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin : "https://skc-frontend.vercel.app/",
+  methods: ['GET', 'POST'],  
+  allowedHeaders: ['Content-Type', 'Authorization'],  
+}));
 app.use(express.json());
 
 const port = 5000;
