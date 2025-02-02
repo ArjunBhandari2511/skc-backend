@@ -30,8 +30,8 @@ app.get("/quiz", async (req, res) => {
       headers: { "X-Api-Key": QUIZ_API_KEY },
       params: {
         category: "code",
-        tags: "Javascript",
-        limit: 10,
+        tags: "Python",
+        limit: 20,
       },
     });
 
