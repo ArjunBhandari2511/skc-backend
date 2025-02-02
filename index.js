@@ -16,7 +16,7 @@ const port = 5000;
 const QUIZ_API_KEY = process.env.QUIZ_API_KEY;
 
 app.get("/", (req, res) => {
-  res.statusCode(200).send("Skool Of Code Backend!");
+  res.send("Skool Of Code Backend!");
 });
 
 // Endpoint to fetch Python quiz questions
